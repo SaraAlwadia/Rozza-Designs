@@ -1,0 +1,165 @@
+@import url('../css/fonts.css');
+html,
+body {
+    box-sizing: border-box;
+}
+
+:root {
+    /*Theme Color*/
+    --main_color: #FF4086;
+    --second_color: #84C94E;
+    --bg_color: #0f0f0f;
+    --Abel: 'Abel', cursive;
+}
+
+.container {
+    padding: 10px 0;
+    margin: 30px auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-weight: 800;
+    margin: auto;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 1.5rem 0;
+    width: 100%;
+    font-size: 20px;
+    font-family: var(--Abel);
+    background: #fff;
+    color: var(--main_color);
+}
+
+ul .links {
+    margin: .8rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    height: .5%;
+    margin: 5px;
+    border: 1px var(--main_color) solid;
+    display: block;
+    justify-content: space-between;
+    transition: ease-in-out 0.1s;
+}
+
+ul li:hover a{
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+
+i {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 1rem 1.5rem;
+}
+
+ul li .fa-facebook {
+    color: #3b5998;
+}
+
+ul li .fa-twitter {
+    color: #1DA1F2;
+}
+
+ul li .fa-globe {
+    color: #4285F4;
+}
+
+ul li .fa-instagram {
+    color: #C13584;
+}
+
+ul li .fa-youtube {
+    color: #FF0000;
+}
+
+ul li .fa-linkedin-in {
+    color: #0e76a8;
+}
+
+@media only screen and (max-width: 1130px) {
+    .container {
+        padding: .1rem 10%;
+    }
+    a {
+        margin: 1rem;
+        width: 100%;
+        font-size: 20px;
+    }
+    ul {
+        width: 50%;
+    }
+    ul .links {
+        padding: .4rem .75rem;
+        margin: .6rem 0;
+    }
+    ul li {
+        margin: 7.5px;
+        margin: 10px;
+    }
+}
+
+
+/***x Viewport less then or equal to 1130px x***/
+
+
+/*Viewport less then or equal to 750px*/
+
+@media only screen and (max-width: 750px) {
+    .container {
+        padding: 0.8rem 10%;
+    }
+    a {
+        margin: .8rem;
+        width: 100%;
+        font-size: 15px;
+    }
+    ul {
+        width: 60%;
+    }
+    ul .links {
+        padding: .2rem .5rem;
+        margin: .4rem 0;
+    }
+    ul li {
+        margin: 5px;
+    }
+}
+
+
+/******x****Viewport less then or equal to 750px****x******/
+
+
+/*Viewport less then or equal to 520px*/
+
+@media only screen and (max-width: 520px) {
+    .container {
+        padding: .2rem 2%;
+    }
+    a {
+        margin: .5rem;
+        width: 100%;
+        font-size: 15px;
+    }
+    ul {
+        width: 70%;
+    }
+    ul .links {
+        padding: .1rem .25rem;
+        margin: .2rem 0;
+        width: 70%;
+    }
+    ul li {
+        margin: 2.5px;
+    }
+}
